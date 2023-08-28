@@ -1,3 +1,89 @@
-h1 {
+.login-screen {
+    position: relative;
+    height: 100%;
+    background: url("https://raw.githubusercontent.com/thatanjan/netflix-clone-yt/youtube/media//banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginScreen-gradient {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,
+            rgba(0, 0, 0, 0.7) 0,
+            rgba(0, 0, 0, 0.1) 60%,
+            rgba(0, 0, 0, 0.9) 100%);
+}
+
+.login-logo {
+    position: fixed;
+    left: 0;
+    width: 7rem;
+    padding-left: 50px;
+    object-fit: contain;
+}
+
+.login-btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.loginScreen-body>h1 {
+    font-size: 3.125rem;
+    margin-bottom: 10px;
+}
+
+.loginScreen-body>h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.loginScreen-body {
+    position: absolute;
+    top: 30%;
+    left:0;
+    right: 0;
     color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.login-input>form>input {
+    padding: 10px;
+    outline: none;
+    height: 20px;
+    width: 30%;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    max-width: 600px;
+}
+
+.login-input {
+    margin: 20px;
+}
+
+.login-getStarted-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
 }

@@ -18,13 +18,13 @@ const Nav = () => {
     }, [])
 
     return (
-        <header className={`nav ${show &&"nav-black"}`}>
+        <header className={`nav ${show && "nav-black"}`}>
             <div className="nav-content">
                 <div className="nav-logo">
                     <img src="../netflix.png" alt="logo" />
                 </div>
                 <div className="avtar">
-                    <img src="../user-avtar.png" alt="" />
+                    <img src="../user-avtar.png" alt="avtar" />
                 </div>
             </div>
         </header>
