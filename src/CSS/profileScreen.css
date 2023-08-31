@@ -1,0 +1,65 @@
+.profilePage {
+    height: 100vh;
+    color: white;
+}
+
+.profileBody {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    max-width: 800px;
+}
+
+.profileInfo img {
+    height: 100%;
+}
+
+.signOut {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 100%;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profileBody>h1 {
+    font-size: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2b;
+    margin-bottom: 10px;
+}
+
+.profilePlans>h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #282c2b;
+}
+
+.profilePlans {
+    margin-top: 10px;
+}
+
+.profileDetail {
+    color: white;
+    margin-left: 25px;
+    flex: 1;
+}
+
+.profileDetail>h2 {
+    background-color: grey;
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+    border-radius: 2px;
+}
+
+.profileInfo {
+    display: flex;
+}

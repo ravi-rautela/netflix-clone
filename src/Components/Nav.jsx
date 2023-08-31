@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import '../CSS/Nav.css'
+import { useNavigate } from 'react-router-dom';
 
 const Nav = () => {
     const [show, handleShow] = useState(false);
+    const navigate = useNavigate();
+
+    
     const trasitionNavBar = () => {
         if (window.scrollY > 100) {
             handleShow(true);
@@ -20,10 +24,10 @@ const Nav = () => {
     return (
         <header className={`nav ${show && "nav-black"}`}>
             <div className="nav-content">
-                <div className="nav-logo">
+                <div className="nav-logo" onClick={() => { navigate("/") }}>
                     <img src="../netflix.png" alt="logo" />
                 </div>
-                <div className="avtar">
+                <div className="avtar" onClick={() => { navigate("/profile") }}>
                     <img src="../user-avtar.png" alt="avtar" />
                 </div>
             </div>
